@@ -10,16 +10,25 @@
     text-align: center;
 }
 
+.contact-form__heading h2 {
+    font-weight: 250;
+}
+
 .form{
     margin: 0 auto;
     width: 80%;
-    text-align: center;
+    text-align: left;
 }
 
 .form__group{
     display: flex;
-    justify-content:space-between;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+.form__group-title{
+    width: 200px;
+    text-align: left;
 }
 
 .form__label-item{
@@ -28,7 +37,7 @@
 
 .form__label-required{
     margin-left: 5px;
-    color: #ff0000;
+    color: #FA8072;
 }
 
 .form__error{
@@ -39,39 +48,100 @@
 
 .form__input--name input{
     padding: 10px;
-    width: 250px;
+    width: 280px;
     height: 40px;
     border: none;
     border-radius: 3px;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     appearance: none;
+    color: #808080;
 }
 
-.form__input--gender input{
+.form__input--name input:first-child {
+    margin-right: 30px;
+}
+
+.form__input--gender{
+    display: flex;
+    align-items: center;
+}
+
+.form__input--gender input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D2B48C;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form__input--gender input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #D2B48C;
+    border-radius: 50%;
+}
+
+.form__input--gender label {
+    margin-right: 60px;
     color: #D2B48C;
-}
-
-.form__input--gender input:checked{
-    background: #D2B48C;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .form__input--tel input{
+    text-align: center;
     padding: 10px;
-    width: 200px;
+    width: 190px;
     height: 40px;
     border: none;
     border-radius: 3px;
-    background-color:#ddd;
+    background-color:#F5F5F5;
     appearance: none;
+    color: #808080;
 }
 
-.form__input--select select{
-    padding: 10px;
+.form__input--select {
+    position: relative;
+    display: inline-block;
     width: 300px;
+}
+
+.form__input--select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
     height: 40px;
+    padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #ddd;
+    background-color: #F5F5F5;
+    color: #808080;
+    cursor: pointer;
+}
+
+
+.form__input--select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #D2B48C;
+    pointer-events: none;
 }
 
 .form__input--textarea textarea{
@@ -80,8 +150,10 @@
     height: 100px;
     border: none;
     border-radius: 3px;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     appearance: none;
+    resize: none;
+    color: #808080;
 }
 
 .form__input--email input,
@@ -92,20 +164,21 @@
     height: 40px;
     border: none;
     border-radius: 3px;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     appearance: none;
+    color: #808080;
 }
 
 .form__button{
     margin-top: 30px;
+    text-align: center;
 }
 
 .form__button-submit{
     padding: 10px;
-    width: 20%;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     border: none;
-    border-radius: 3px;
     background: #D2B48C;
     color: #fff;
     cursor: pointer;

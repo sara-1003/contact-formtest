@@ -15,8 +15,7 @@
 }
 
 .thanks__logo{
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 15px;
     color: #D2B48C;
 }
 
@@ -28,32 +27,22 @@
 .thanks__button-home{
     padding: 10px;
     width: 100px;
-    height: 50px;
+    height: 40px;
     color: #fff;
     background: #D2B48C;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
 }
 
 .background__text {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #000;
-    margin: 50px 0;
-}
-
-.background__text::after {
-    content: "Thank you";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size: 150px;
     color: rgba(210, 180, 140, 0.15);
-    z-index: -1;
+    z-index: 0;
     white-space: nowrap;
+    pointer-events: none;
+    text-align: center;
 }
