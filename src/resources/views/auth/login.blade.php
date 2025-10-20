@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="form__group">
-            <div class="form__group--title">
+            <div class="form__group-title">
                 <span class="form__label--item">パスワード</span>
             </div>
             <div class="form__group-content">

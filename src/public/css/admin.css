@@ -26,6 +26,7 @@
 
 .admin-form__heading h2 {
     color: #6b5a4a;
+    font-family: "Playfair Display", serif;
 }
 
 .search-form{
@@ -40,6 +41,7 @@
 .search-form__item{
     display: flex;
     width: 100%;
+    gap: 10px;
 }
 
 .search-form__item-name{
@@ -48,12 +50,11 @@
     width: 30%;
     height: 40px;
     border: 1px solid #ddd;
-    background: #F5F5F5;
-    color: #d8d1c9;
+    background: #fcfcfc;
 }
 
 .search-form__item-gender{
-    margin-right: 20px;
+    margin-right: 30px;
     padding: 10px;
     width: 10%;
     height: 40px;
@@ -73,6 +74,7 @@
 }
 
 .search-form__item-date{
+    padding-right: 30px;
     margin-right: 20px;
     padding: 10px;
     width: 15%;
@@ -82,10 +84,23 @@
     color: #8f7c6a;
 }
 
+.search-form__item-gender,
+.search-form__item-category,
+.search-form__item-date {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f5f5f5cd url("data:image/svg+xml;utf8,<svg fill='%238f7c6a' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+    background-size: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
 .search-form__button{
     width: 20%;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .search__button-submit{
@@ -231,6 +246,7 @@
     border-radius: 8px;
     border: 2px solid #6b5a4a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
 }
 
 .modal-active {

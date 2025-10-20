@@ -1,6 +1,7 @@
 .header{
     border-bottom: 1px solid #ddd;
     display: flex;
+    font-family: "Playfair Display", serif;
 }
 
 .header__inner{
@@ -13,7 +14,7 @@
 }
 
 .header__logo{
-    color: #D2B48C;
+    color: #6b5a4a;
     text-decoration: none;
     font-size: 30px;
 }
