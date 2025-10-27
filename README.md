@@ -22,7 +22,7 @@ git clone git@github.com:sara-1003/contact-formtest.git
 ・phpMyAdmin
 
 ## ER図
-![ER図](contact.png)
+![art](contact.png)
 
 ## URL
 ・開発環境：http://localhost/

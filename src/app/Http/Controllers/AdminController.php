@@ -25,7 +25,8 @@ class AdminController extends Controller
         ->KeywordSearch($request->keyword)
         ->GenderSearch($request->gender)
         ->DateSearch($request->date)
-        ->paginate(7);
+        ->paginate(7)
+        ->appends($request->all());
 
         $contacts->withPath('/admin/search');
 
