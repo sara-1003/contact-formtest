@@ -32,7 +32,7 @@
                 <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
                 @endforeach
             </select>
-            <input class="search-form__item-date"  type="date">
+            <input class="search-form__item-date"  type="date" name="date" value="{{ $category['created_at'] }}">
         </div>
         <div class="search-form__button">
             <button class="search__button-submit" type="submit">検索</button>

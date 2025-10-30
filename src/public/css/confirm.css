@@ -28,9 +28,13 @@
     width: 100%;
 }
 
-.confirm-table__inner th,
+.confirm-table__inner th{
+    height: 60px;
+    width: 30%;
+}
 .confirm-table__inner td {
     height: 60px;
+    width: 70%;
 }
 
 .confirm-table__header{
@@ -42,19 +46,18 @@
     text-align: left;
 }
 
+
 .confirm-table__text{
     padding: 15px;
     border-bottom: 1px solid #ddd;
     color: #a89889;
 }
 
-.confirm-table__row:first-child .confirm-table__text {
-    display: flex;
-}
 
 .confirm-table__text input{
     padding-left: 20px;
     width: 100%;
+    font-size: 15px;
     outline: none;
     border: none;
     color: #a89889;

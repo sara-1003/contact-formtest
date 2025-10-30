@@ -1,9 +1,9 @@
 # お問い合わせ管理システム
 
 ## Dockerビルド
-1.リポジトリをクローン
+1.リポジトリをクローン. 
 git clone git@github.com:sara-1003/contact-formtest.git
-2.docker-compose up -d --build
+2.docker-compose up -d --build. 
 
 ## Laravel環境構築
 1.docker-compose exec php bash
